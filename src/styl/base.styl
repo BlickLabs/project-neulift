@@ -111,9 +111,17 @@ h1, h2, h3, h4, h5, h6, p
   margin 4px 0
   width 39px
 
+.top-view
+  display flex
+  flex-direction row
+  justify-content center
+
 @media screen and (max-width 768px)
   body
     margin 0 0 520px 0
+
+  .top-view
+    flex-direction column
 
 @import 'partials/navbar'
 
