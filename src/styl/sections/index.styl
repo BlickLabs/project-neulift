@@ -1,0 +1,226 @@
+.home
+  &-cover
+    background-image url("../img/backgrounds/cover-home.png")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    display flex
+    flex-direction column
+    height 615px
+    justify-content flex-end
+    padding 0 0 50px 150px
+
+    &-subtitle
+      margin 25px 0 60px 0
+      max-width 305px
+
+  &-view-more
+    align-items center
+    display flex
+    flex-direction row
+
+  &-arrow
+    height 14px
+    width 6px
+
+    &-container
+      margin 0 0 0 15px
+
+  &-treatments
+    display flex
+    flex-direction row
+    justify-content center
+    margin 0 0 95px 0
+
+    &-container
+      background-image url("../img/backgrounds/background-home-1.png")
+      background-position left bottom
+      background-repeat no-repeat
+      background-size 250px
+      padding 145px 0 95px 0
+
+    &-head
+      display flex
+      flex-direction row
+
+    &-subtitle
+      margin-bottom 75px
+      max-width 690px
+
+    &-content
+      display flex
+      flex-direction row
+
+    &-description
+      margin 25px 0 50px 0
+      max-width 325px
+
+    &-img
+      height 302px
+      width 236px !important
+
+      &-container
+        margin-left 124px
+
+  &-surgeons
+    display flex
+    flex-direction row
+    background-image url("../img/backgrounds/background-home-2.png")
+    background-position right bottom
+    background-repeat no-repeat
+    background-size 110px
+    padding 145px 0 95px 0
+
+    &-img
+      height 665px
+      width 736px
+
+    &-content
+      margin 85px 106px 0 82px
+
+    &-paragraph
+      margin 25px 0 60px 0
+
+  &-schedule
+    display flex
+    flex-direction row
+    justify-content center
+    margin 125px 0  176px 0
+
+    &-content
+      display flex
+      flex-direction row
+
+    &-paragraph
+      margin 25px 0 50px 0
+      max-width 285px
+
+    &-img
+      height 326px
+      width 272px
+
+      &-container
+        margin-left 115px
+
+.treatments-carousel
+  margin 0 auto
+  position relative
+  transform translateX(128px)
+  width 685px
+
+.home-controls
+  left -70px
+  top 110px
+  position absolute
+
+@media screen and (max-width 768px)
+  .home
+    &-cover
+      background-position right
+      height 430px
+      padding 0 30px 50px 30px
+
+      &-subtitle
+        margin-bottom 30px
+
+    &-treatments
+      margin-bottom 40px
+
+      &-container
+        padding 50px 30px
+
+      &-content
+        flex-direction column
+
+      &-subtitle
+        margin 30px 0 0 0
+
+      &-description
+        margin 10px 0 30px 0
+
+      &-img
+        &-container
+          margin 30px 0 0 0
+
+      &-head
+        flex-direction column
+
+      &-description
+        max-width 250px
+
+    &-surgeons
+      flex-direction column
+      padding 140px 30px 40px 30px
+
+      &-content
+        margin 40px 0 0 0
+
+      &-img
+        height auto
+        width 100%
+
+      &-paragraph
+        margin-bottom 40px
+
+    &-schedule
+      flex-direction column
+      margin 30px 0 50px 0
+      padding 0 30px
+
+      &-content
+        flex-direction column
+        margin-top 30px
+
+      &-img
+        height 216px
+        width 180px
+
+        &-container
+          margin 40px auto 0  auto
+
+      &-paragraph
+        margin 20px 0 30px 0
+
+  .treatments-carousel
+    transform translateX(0)
+
+  .home-controls
+    bottom -125px
+    left 0
+    top initial
+
+@media screen and (min-width 769px) and (max-width 1120px)
+  .home
+    &-treatments
+      &-container
+        padding-left 30px
+        padding-right 30px
+
+      &-content
+        flex-direction column
+
+      &-img
+        &-container
+          margin 30px 0 0 0
+
+    &-surgeons
+      &-img
+        height 361px
+        width 400px
+
+      &-content
+        margin-left 40px
+        margin-right 45px
+
+    &-schedule
+      padding 0 30px
+
+      &-img
+        height 263px
+        width 220px
+
+        &-container
+          margin-left 30px
+
+  .treatments-carousel
+    width 430px

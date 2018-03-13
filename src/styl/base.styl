@@ -14,7 +14,7 @@ html
 
 body
   font-size inherit
-  margin 78px 0 300px 0
+  margin 0 0 364px 0
 
   &.noscroll
     overflow hidden
@@ -88,6 +88,32 @@ input, textarea, button, select
 textarea
   resize none
 // END FORMS //
+
+h1, h2, h3, h4, h5, h6, p
+  margin 0
+
+.text-decorator
+  background-color $cBlueGray
+  bottom -5px
+  height 1px
+  left -6px
+  position absolute
+  width 111px
+
+  &-container
+    position relative
+
+.subtitle-row-container
+  margin 10px 150px 0 0
+
+.navigation-arrows
+  height 39px
+  margin 4px 0
+  width 39px
+
+@media screen and (max-width 768px)
+  body
+    margin 0 0 520px 0
 
 @import 'partials/navbar'
 

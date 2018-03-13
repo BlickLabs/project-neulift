@@ -16,6 +16,10 @@
     height 80px
     width 141px
 
+  &-tower
+    display flex
+    flex-direction row
+
   &-content
     display flex
     flex-direction row
@@ -59,3 +63,57 @@
     &-ig
       height 12px
       width 12px
+
+@media screen and (max-width 768px)
+  .footer
+    flex-direction column
+    height 520px
+
+    &-logo
+      height 56px
+      width 100px
+
+    &-content
+      margin-top 30px
+
+    &-tower
+     flex-direction column
+
+     &:first-child
+       margin-right 30px
+
+    &-column
+      margin 0 0 25px 0
+
+      &:last-child
+        margin-bottom 0
+
+    &-separator
+      margin-bottom 10px
+
+    &-location
+      &-content
+        flex-direction column
+
+@media screen and (min-width 1000px) and (max-width 1300px)
+  .footer
+    &-column
+      margin-left 40px
+
+@media screen and (min-width 769px) and (max-width 999px)
+  .footer
+    padding 0 40px
+
+    &-content
+      flex-wrap wrap
+      justify-content space-around
+
+    &-column
+      margin-left 40px
+
+    &-tower
+      &:first-child
+        margin-bottom 20px
+
+    &-separator
+      margin-bottom 10px
