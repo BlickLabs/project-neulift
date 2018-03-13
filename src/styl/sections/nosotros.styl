@@ -1,0 +1,151 @@
+.about
+  margin 200px 0 130px 0
+
+  &-intro
+    margin 0 0 140px 0
+
+    &-description
+      max-width 640px
+
+  &-surgeons
+    display flex
+    flex-direction row
+
+    &-img
+      height 480px
+      width 736px
+
+    &-paragraph
+      margin 20px 0 50px 0
+      max-width 350px
+
+  &-team
+    display flex
+    flex-direction row
+    justify-content center
+    margin-top 158px
+
+    &-content
+      display flex
+      flex-direction row
+
+    &-doctor
+      margin-bottom 70px
+
+    &-img
+      height 338px
+      width 283px !important
+
+    &-list
+      color $cLightBlack
+      line-height 27px
+      list-style none
+      max-width 356px
+      padding-left 0
+
+      &-container
+        margin 30px 0 0 59px
+
+      &
+        li
+          margin-bottom 28px
+          position relative
+
+      &
+        li:before
+          content ""
+          display block
+          background $cBlueGray
+          height 8px
+          left -25px
+          position absolute
+          top 10px
+          transform rotate(45deg)
+          width 8px
+
+  &-carousel
+    position relative
+    width 698px
+
+  &-controls
+    left 53px
+    position absolute
+    top 380px
+
+@media screen and (max-width 768px)
+  .about
+    margin 120px 0 100px 0
+
+    &-intro
+      margin-bottom 80px
+      padding 0 30px
+
+      &-description
+        margin-top 30px
+
+    &-surgeons
+      flex-direction column
+      padding 0 30px
+
+      &-img
+        height auto
+        width 100%
+
+      &-paragraph
+        margin-bottom 30px
+
+    &-team
+      flex-direction column
+      margin-top 50px
+      padding 0 30px
+
+      &-our
+        margin-bottom 50px
+
+      &-content
+        flex-direction column
+
+      &-img
+        height 298px
+        width 250px !important
+
+      &-doctor
+        margin-bottom 25px
+
+      &-list
+
+        &-container
+          margin-left 0
+          max-width 250px
+
+        li
+          margin 0 30px 15px 30px
+
+    &-carousel
+      margin 0 auto
+      width 260px
+
+    &-controls
+      left -20px
+      top 190px
+
+@media screen and (min-width 769px) and (max-width 1300px)
+  .about
+    &-intro
+      padding 0 30px
+
+    &-surgeons
+      &-img
+        height auto
+        width 100%
+
+        &-container
+          width 50%
+
+    &-team
+      align-items center
+      flex-direction column
+      margin-top 30px
+
+      &-our
+        margin-bottom 80px
