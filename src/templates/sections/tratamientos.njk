@@ -5,4 +5,95 @@
 {% endblock %}
 
 {% block content %}
+<div class="treatments">
+  <div class="treatments-head">
+    <h1 class="font-h1 ff-bold">Tratamientos</h1>
+    <div class="treatments-separator-container">
+      <div class="treatments-separator"></div>
+    </div>
+    <div class="treatments-go-container">
+      <a class="go-option" href="#go-injectables">
+        <div class="treatments-go">
+          <span class="font-h2 ff-bold">Inyectables</span>
+          <div class="treatments-go-injectables-container">
+            <img class="treatments-go-injectables" src="img/icons/icon-injectables.png">
+          </div>
+        </div>
+      </a>
+      <a class="go-option" href="#go-apatology">
+        <div class="treatments-go">
+          <span class="font-h2 ff-bold">Aparatología</span>
+          <div class="treatments-go-aparatology-container">
+            <img class="treatments-go-aparatology" src="img/icons/icon-aparatology.png">
+          </div>
+        </div>
+      </a>
+      <a class="go-option" href="#go-others">
+        <div class="treatments-go">
+          <span class="font-h2 ff-bold">Otros</span>
+          <div class="treatments-go-others-container">
+            <img class="treatments-go-others" src="img/icons/icon-others.png">
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="treatments-injectables" id="go-injectables">
+    <div class="treatments-carousel-title">
+      <h3 class="font-h1 ff-bold">Inyectables</h3>
+    </div>
+    <div class="injectables-carousel-container">
+      <div class="injectables-carousel owl-carousel">
+        <img class="treatments-cards" src="img/treatments/facial-fillers.jpg">
+        <img class="treatments-cards" src="img/treatments/mother-cells.jpg">
+        <img class="treatments-cards" src="img/treatments/mesotherapy.jpg">
+        <img class="treatments-cards" src="img/treatments/mesotherapy.jpg">
+        <img class="treatments-cards" src="img/treatments/mesotherapy.jpg">
+        <img class="treatments-cards" src="img/treatments/mesotherapy.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="treatments-aparatology" id="go-apatology">
+    <div class="aparatology-carousel-container">
+      <div class="aparatology-carousel owl-carousel">
+        <img class="treatments-cards" src="img/treatments/radiofrequency.jpg">
+        <img class="treatments-cards" src="img/treatments/ultrasound.jpg">
+        <img class="treatments-cards" src="img/treatments/mesotherapy.jpg">
+        <img class="treatments-cards" src="img/treatments/red-light.jpg">
+        <img class="treatments-cards" src="img/treatments/blue-light.jpg">
+        <img class="treatments-cards" src="img/treatments/green-light.jpg">
+      </div>
+    </div>
+    <div class="treatments-carousel-title">
+      <h3 class="font-h1 ff-bold">Aparatología</h3>
+      <div class="treatments-aparatology-description">
+        <p class="font-h5 ff-medium">
+          Rejuvenecimiento facial y corporal con diferentes tecnologías
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="treatments-others" id="go-others">
+    <div class="treatments-carousel-title">
+      <h3 class="font-h1 ff-bold">Otros</h3>
+    </div>
+    <div class="others-carousel-container">
+      <div class="others-carousel owl-carousel">
+        <img class="treatments-cards" src="img/treatments/non-surgical-face-lift.jpg">
+        <img class="treatments-cards" src="img/treatments/sequels-acne.jpg">
+        <img class="treatments-cards" src="img/treatments/superficial-spots.jpg">
+        <img class="treatments-cards" src="img/treatments/body-contour.jpg">
+        <img class="treatments-cards" src="img/treatments/body-reduction.jpg">
+        <img class="treatments-cards" src="img/treatments/post-surgery-fibrosis.jpg">
+        <img class="treatments-cards" src="img/treatments/postoperative-treatments.jpg">
+        <img class="treatments-cards" src="img/treatments/post-pregnazy.jpg">
+        <img class="treatments-cards" src="img/treatments/celullitis.jpg">
+        <img class="treatments-cards" src="img/treatments/cutaneous-flaccidity.jpg">
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
