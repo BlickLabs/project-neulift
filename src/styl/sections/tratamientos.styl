@@ -1,0 +1,192 @@
+.treatments
+  background-image url("../img/backgrounds/background-treatments-1.png"), url("../img/backgrounds/background-treatments-2.png")
+  background-position left 560px, right 900px
+  background-repeat no-repeat
+  background-size 150px, 200px
+  margin-top 190px
+
+  &-head
+    align-items center
+    display flex
+    flex-direction column
+    margin-bottom 159px
+
+  &-separator
+    background-color $cBlueGray
+    height 1px
+
+    &-container
+      margin 70px 0
+      width 86%
+
+  &-go
+    align-items center
+    border solid 1px $cBlueGray
+    display flex
+    flex-direction row
+    height 71px
+    padding 0 40px
+
+    &-container
+      display flex
+      flex-direction row
+
+      &
+        a:nth-child(2)
+          margin 0 62px
+
+    &-injectables,
+    &-injectables-container
+      height 30px
+      width 30px
+
+    &-aparatology,
+    &-aparatology-container
+      height 32px
+      width 30px
+
+    &-others,
+    &-others-container
+      height 30px
+      width 26px
+
+    &-injectables-container,
+    &-aparatology-container,
+    &-others-container
+      margin-left 20px
+
+  &-injectables,
+  &-aparatology,
+  &-others
+    display flex
+    flex-direction row
+    height 302px
+    margin-bottom 158px
+    position relative
+
+  &-aparatology
+    flex-direction row-reverse
+
+    &-description
+      margin-top 25px
+      max-width 275px
+
+  &-carousel
+    &-title
+      margin 54px 0 0 17%
+
+    &-title:nth-child(2)
+      margin 54px 17% 0 0
+
+  &-cards
+    height 302px
+    width 236px !important
+
+.injectables,
+.aparatology,
+.others
+  &-controls
+    bottom 0
+    left -88px
+    position absolute
+
+.aparatology
+  &-controls
+    left initial
+    right -88px
+
+.injectables-carousel,
+.aparatology-carousel,
+.others-carousel
+  width 100%
+
+  &-container
+    position absolute
+    right 0
+    width 50%
+
+.aparatology-carousel
+  width 79%
+  &-container
+    left 0
+    right initial
+
+.aparatology-carousel
+  &-container
+    left 0
+    right initial
+
+@media screen and (max-width 768px)
+  .treatments
+    margin-top 120px
+
+    &-separator
+      &-container
+        margin 40px 0
+
+    &-head
+      margin-bottom 20px
+    &-go
+      padding 0 0 0 60px
+      width 280px
+
+      &-container
+        flex-direction column
+
+        a:nth-child(2)
+          margin 20px 0
+
+    &-injectables,
+    &-aparatology,
+    &-others
+      flex-direction column
+
+    &-others
+      margin-top 200px
+
+    &-carousel
+      &-title
+        margin-left 0
+        text-align center
+
+      &-title:nth-child(2)
+        margin-right 0
+
+    &-aparatology
+      &-description
+        margin-left auto
+        margin-right auto
+        max-width 236px
+        text-align left
+
+  .injectables-carousel,
+  .aparatology-carousel,
+  .others-carousel
+    &-container
+      left 0
+      top 120px
+      margin 0 auto
+      width 236px
+
+  .aparatology-carousel
+    width 100%
+
+    &-container
+      right 0
+      top 180px
+
+  .injectables,
+  .aparatology,
+  .others
+    &-controls
+      bottom 10px
+      left -18px
+      position absolute
+
+@media screen and (min-width 769px) and (max-width 860px)
+  .treatments
+    &-go
+      &-container
+        &
+          a:nth-child(2)
+            margin 0 15px
