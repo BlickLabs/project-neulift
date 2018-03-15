@@ -103,18 +103,71 @@ h1, h2, h3, h4, h5, h6, p
   &-container
     position relative
 
+.special-button
+  background none
+  border-bottom solid 1px $cBlueGray
+  border-left none
+  border-right none
+  border-top none
+  color $white
+  cursor pointer
+  overflow hidden
+  position relative
+  transition 0.3s ease-in
+  -o-transition0 0.3s ease-in
+  -ms-transition 0.3s ease-in
+  -moz-transition 0.3s ease-in
+  -webkit-transition 0.3s ease-in
+  padding 6px 10px !important
+  z-index 1
+
+  &:hover
+    background-color $cWhite
+    color $cWhite
+
+  &:before
+    background-color $cBlueGray
+    bottom 0
+    content ""
+    left 0
+    position absolute
+    right 0
+    top 100%
+    -webkit-transition: top 0.2s ease-in;
+    z-index -1
+
+  &:hover:before
+    top 0
+
 .subtitle-row-container
   margin 10px 150px 0 0
 
 .navigation-arrows
   height 39px
   margin 4px 0
+  transition 0.3s opacity
   width 39px
+
+  &:hover
+    opacity 0.7
+    transition 0.3s opacity
 
 .top-view
   display flex
   flex-direction row
   justify-content center
+
+.counter
+  &-container
+    align-items center
+    display flex
+    flex-direction row
+
+  &-line
+    background-color $cBlack
+    height 1px
+    margin 0 8px
+    width 18px
 
 @media screen and (max-width 768px)
   body
