@@ -1,0 +1,145 @@
+.contact
+  background-image url("../img/backgrounds/background-contact.png")
+  background-position left -190px
+  background-repeat no-repeat
+  background-size 330px
+  margin-top 160px
+
+  &-form
+    &-section
+      display flex
+      flex-direction row
+      margin 0 140px 160px 140px
+
+    &-container
+      margin-left 250px
+      width 100%
+
+    &-content
+      display flex
+      flex-direction column
+
+    &-input
+      border-bottom solid 1px $cBlueGray
+      border-left none
+      border-right none
+      border-top none
+      line-height 18px
+      margin-bottom 40px
+      padding 0 10px 2px 10px
+
+    &-submit
+      background-color $cBlueGray
+      border none
+      color $cWhite
+      cursor pointer
+      height 33px
+      width 109px
+
+  &-bottom
+    background-color $cBackground
+    display flex
+    flex-direction row
+    justify-content space-between
+    padding-left 136px
+
+    &-info
+      display flex
+      flex-direction column
+      justify-content center
+
+    &-content
+      display flex
+      flex-direction row
+
+    &-content:nth-child(2)
+      margin 30px 0
+
+    &-text
+      color $cLightBlack
+      letter-spacing 0.3px
+      line-height 22px
+
+  &-icon
+    &-container
+      display flex
+      justify-content center
+      margin-right 11px
+      width 17px
+
+    &-location
+      height 18px
+      width 14px
+
+    &-email
+      height 12px
+      width 17px
+
+    &-phone
+      height 17px
+      width 16px
+
+  &-img
+    height 302px
+    width 748px
+
+.icon
+  &-location-container
+    height 18px
+    margin-top 3px
+
+  &-email-container
+    height 12px
+    margin-top 6px
+
+  &-phone-container
+    height 16px
+    margin-top 4px
+
+@media screen and (max-width 768px)
+  .contact
+    margin-top 120px
+
+    &-form
+      &-section
+        flex-direction column
+        margin 0 0 30px 0
+        padding 0 30px
+
+      &-container
+        margin 30px 0 0 0
+
+    &-bottom
+      flex-direction column-reverse
+      padding-left 0
+
+      &-info
+        padding 30px
+
+    &-img
+      height auto
+      width 100%
+
+@media screen and (min-width 769px) and (max-width 1200px)
+  .contact
+    &-form
+      &-section
+        margin-left 100px
+        margin-right 100px
+
+      &-container
+        margin-left 120px
+
+    &-bottom
+      padding-left 0
+
+      &-content:nth-child(2)
+        margin 15px 0
+
+      &-info
+        padding 0 40px
+        width 40%
+
+    &-img
+      height 100%
+      width 60%
