@@ -11,22 +11,22 @@
       <h1 class="font-mega ff-bold">Contacto</h1>
     </div>
     <div class="contact-form-container">
-      <form>
+      <form name="neulift-contact" method="post" action="http://integrations.blick.mx/neulift/contact/">
         <div class="contact-form-content">
           <label class="font-h5 ff-bold">Nombre completo</label>
-          <input class="contact-form-input font-h5 ff-medium" type="" name="name">
+          <input class="contact-form-input font-h5 ff-medium" type="text" name="name" required>
         </div>
         <div class="contact-form-content">
           <label class="font-h5 ff-bold">Teléfono</label>
-          <input class="contact-form-input font-h5 ff-medium"  type="" name="phone">
+          <input class="contact-form-input font-h5 ff-medium"  type="tel" name="phone">
         </div>
         <div class="contact-form-content">
           <label class="font-h5 ff-bold">Correo electrónico</label>
-          <input class="contact-form-input font-h5 ff-medium"  type="" name="email">
+          <input class="contact-form-input font-h5 ff-medium"  type="email" name="email" required>
         </div>
         <div class="contact-form-content">
           <label class="font-h5 ff-bold">Mensaje</label>
-          <textarea class="contact-form-input font-h5 ff-medium"  name="message"></textarea>
+          <textarea class="contact-form-input font-h5 ff-medium" type="text"  name="message"></textarea>
         </div>
         <div>
           <button class="contact-form-submit font-h5 ff-bold" type="submit">Enviar</button>
