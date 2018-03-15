@@ -26,6 +26,7 @@
     flex-direction row
     height 71px
     padding 0 40px
+    transition 0.3s
 
     &-container
       display flex
@@ -36,16 +37,19 @@
           margin 0 62px
 
     &-injectables,
+    &-injectables-hover
     &-injectables-container
       height 30px
       width 30px
 
     &-aparatology,
+    &-aparatology-hover,
     &-aparatology-container
       height 32px
       width 30px
 
     &-others,
+    &-others-hover,
     &-others-container
       height 30px
       width 26px
@@ -54,6 +58,12 @@
     &-aparatology-container,
     &-others-container
       margin-left 20px
+
+    &-injectables-hover,
+    &-aparatology-hover,
+    &-others-hover
+      display none
+      transition 0.3s
 
   &-injectables,
   &-aparatology,
@@ -74,6 +84,7 @@
   &-carousel
     &-title
       margin 54px 0 0 17%
+      position relative
 
     &-title:nth-child(2)
       margin 54px 17% 0 0
@@ -116,6 +127,41 @@
     left 0
     right initial
 
+.go-option
+  span
+    transition 0.3s
+
+.go-option:hover
+  .treatments-go
+    &-injectables,
+    &-aparatology,
+    &-others
+      display none
+      transition 0.3s
+
+  .treatments-go
+    &-injectables-hover,
+    &-aparatology-hover,
+    &-others-hover
+      display block
+      transition 0.3s
+
+  .treatments-go
+    background-color $cBlueGray
+    transition 0.3s
+
+    span
+      color $cWhite
+      transition 0.3s
+
+.counter-treatments-container
+  align-items center
+  display flex
+  flex-direction row
+  left 0
+  position absolute
+  top -54px
+
 @media screen and (max-width 768px)
   .treatments
     margin-top 120px
@@ -126,8 +172,9 @@
 
     &-head
       margin-bottom 20px
+
     &-go
-      padding 0 0 0 60px
+      justify-content center
       width 280px
 
       &-container
@@ -182,6 +229,12 @@
       bottom 10px
       left -18px
       position absolute
+
+.counter-treatments-container
+  margin 0 auto
+  right 0
+  top -30px
+  width 55px
 
 @media screen and (min-width 769px) and (max-width 860px)
   .treatments
