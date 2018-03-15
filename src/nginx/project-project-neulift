@@ -1,0 +1,13 @@
+server {
+  listen 80;
+  listen [::]:80;
+
+  root /home/static/project-neulift;
+  index index.html index.htm;
+
+  server_name sandbox.neulift.getmore.mx www.sandbox.neulift.getmore.mx neulift.com.mx www.neulift.com.mx;
+
+  location / {
+      try_files $uri $uri/ =404;
+  }
+}
