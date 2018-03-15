@@ -1,6 +1,6 @@
 .home
   &-cover
-    background-image url("../img/backgrounds/cover-home.png")
+    background-image url("../img/backgrounds/cover-home.jpg")
     background-position center
     background-repeat no-repeat
     background-size cover
@@ -96,21 +96,28 @@
       max-width 285px
 
     &-img
+      display block
       height 326px
       width 272px
 
       &-container
         margin-left 115px
 
+      &-mobile
+        display none
+
 .treatments-carousel
-  margin 0 auto
-  position relative
-  transform translateX(128px)
   width 685px
+
+  &-container
+    margin 0 auto
+    position relative
+    transform translateX(128px)
+    width 685px
 
 .home-controls
   left -70px
-  top 110px
+  top 70px
   position absolute
 
 @media screen and (max-width 768px)
@@ -172,21 +179,26 @@
         margin-top 30px
 
       &-img
-        height 216px
-        width 180px
+        display none
 
         &-container
           margin 40px auto 0  auto
+
+        &-mobile
+          display block
+          height auto
+          width 100%
 
       &-paragraph
         margin 20px 0 30px 0
 
   .treatments-carousel
-    transform translateX(0)
+    &-container
+      transform translateX(0)
 
   .home-controls
-    bottom -125px
-    left 0
+    bottom 170px
+    left -19px
     top initial
 
 @media screen and (min-width 769px) and (max-width 1120px)
@@ -222,5 +234,12 @@
         &-container
           margin-left 30px
 
+        &-mobile
+          display none
+
+
   .treatments-carousel
     width 430px
+
+    &-container
+      width 430px
