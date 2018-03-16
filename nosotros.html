@@ -9,7 +9,8 @@
     
     <link rel="stylesheet" href="css/project-neulift.libs.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon"/>
+    <link runat="server" rel="icon" href="img/favicon/favicon.png" type="image/ico"/>
     <title> - project-neulift</title>
   </head>
   <body>
@@ -59,32 +60,32 @@
     <div class="hamburger-menu-header" data-attribute="">
       <div class="" data-attribute="">
         <a href="index.html" data-attribute="">
-          <img class="hamburger-logo" src="img/logos/" alt="logo hamburger" data-attribute="">
+          <img class="hamburger-logo" src="img/logos/logo-navbar.png" alt="logo hamburger" data-attribute="">
         </a>
       </div>
       <div class="hamburger-close-container" id="hideHamburger">
         <img class="hamburger-close" src="img/icons/close-menu.png">
       </div>
     </div>
-    <div class="hamburger-menu-body" data-attribute="">
-      <a href="index.html" class="hamburger-option-link" data-attribute="">
+    <div class="hamburger-menu-body ff-medium" data-attribute="">
+      <a href="index.html" class="hamburger-option-link " data-attribute="">
         <div class="hamburger-text-container">
-          <span class="hamburger-text ">Inicio</span>
+          <span class="hamburger-text">Inicio</span>
         </div>
       </a>
-      <a href="tratamientos.html" class="hamburger-option-link" data-attribute="">
+      <a href="tratamientos.html" class="hamburger-option-link " data-attribute="">
         <div class="hamburger-text-container">
-          <span class="hamburger-text ">Tratamientos</span>
+          <span class="hamburger-text">Tratamientos</span>
         </div>
       </a>
-      <a href="nosotros.html" class="hamburger-option-link" data-attribute="">
+      <a href="nosotros.html" class="hamburger-option-link  hamburger-active " data-attribute="">
         <div class="hamburger-text-container">
-          <span class="hamburger-text  hamburger-active ">Nosotros</span>
+          <span class="hamburger-text">Nosotros</span>
         </div>
       </a>
-      <a href="contacto.html" class="hamburger-option-link" data-attribute="">
+      <a href="contacto.html" class="hamburger-option-link " data-attribute="">
         <div class="hamburger-text-container">
-          <span class="hamburger-text ">Contacto</span>
+          <span class="hamburger-text">Contacto</span>
         </div>
       </a>
     </div>
@@ -95,7 +96,7 @@
         
 <div class="about">
   <div class="about-intro">
-    <div class="top-view">
+    <div class="top-view top-view-translate">
       <div class="subtitle-row-container">
         <h3 class="font-h3 ff-bold">Nosotros</h3>
       </div>
@@ -122,9 +123,8 @@
       </div>
       <div class="text-decorator-container">
         <a href="contacto.html">
-          <span class="font-h5 ff-bold">Contacto</span>
+          <button class="special-button font-h5 ff-bold">Contacto</button>
         </a>
-        <div class="text-decorator"></div>
       </div>
     </div>
   </div>
@@ -132,7 +132,10 @@
   <div class="about-team">
     <div class="about-team-our">
       <div class="home-surgeons-content">
-        <div>
+        <div class="about-team-title">
+          <div class="counter-container counter-about font-micro ff-bold">
+            <span id="about-counter-init"></span><div class="counter-line"></div><span id="about-counter-total"></span>
+          </div>
           <h2 class="font-h1 ff-bold">Nuestro equipo</h2>
         </div>
         <div class="about-surgeons-paragraph">
@@ -140,57 +143,58 @@
             El equipo de cirujanos plásticos está conformado por el Dr. Marcos Gerardo González Martínez y el Dr. Paulo César González Martínez.
           </p>
         </div>
-        <div class="text-decorator-container">
+        <div class="text-decorator-container about-button-desktop">
           <a href="tratamientos.html">
-            <span class="font-h5 ff-bold">Tratamientos</span>
+            <button class="special-button font-h5 ff-bold">Tratamientos</button>
           </a>
-          <div class="text-decorator"></div>
         </div>
       </div>
     </div>
     <div>
       <div class="about-carousel owl-carousel">
         <div class="about-team-content">
+          <div class="about-team-content-background"></div>
           <div>
-            <img class="about-team-img" src="img/about/img-dr-marcos.jpg">
+            <img class="about-team-img" src="img/about/img-dr-paulo.jpg">
           </div>
           <div class="about-team-list-container">
             <div class="about-team-doctor">
-              <h3 class="font-h2 ff-bold">Dr. Marcos Gerardo González</h3>
+              <h3 class="font-h2 ff-bold">Dr. Paulo César González Martínez</h3>
             </div>
             <ul class="font-h6 ff-medium about-team-list">
               <li>
-                Cirujano plástico estético y reconstructivo que ejerce su práctica médica en la Ciudad de México.
+                Cirujano plástico estético y reconstructivo que ejerce en la Ciudad de México y en la Ciudad de Xalapa Veracruz.
               </li>
               <li>
-                Cédula de especialidad: 5823450.
+                Cédula de especialidad 09973439.
               </li>
               <li>
-                Avalado por el Consejo Mexicano deCirugía plástica estética y reconstructiva (CMCPER) No. 1417.
+                Avalado por el consejo mexicano de Cirugía plástica estética y reconstructiva (CMCPER) No. 1888.
               </li>
               <li>
-                Miembro activo de la Asociación Mexicana de Cirugía plástica y estética y reconstructiva (AMCPER).
+                Miembro activo de la Asociación Mexicana de Cirugía plástica y estética y reconstructiva (AMCPER)
               </li>
               <li>
                 Miembro activo del American College of Plastic Surgeons (ASPS)
               </li>
               <li>
-                Miembro activo del International Society of Aesthetic Plastic Surgery (ISAPS).
+                Colegio Veracruzano de Cirugía plástica, estética y reconstructiva.
               </li>
               <li>
-                Colegio del Valle de México.
+                Autor de artículos nacionales e internacionales y autor de capítulos de libros en Cirugía plástica y reconstructiva.
               </li>
               <li>
-                Autor de diversos artículos nacionales e internacionales y autor de capítulos de libros en Cirugía plástica y reconstructiva.
+                Forma parte del cuerpo médico del Centro Médico ABC y Grupo Ángeles.
               </li>
               <li>
-                Forma parte del cuerpo médico del Centro Médico ABC.
+                Cuenta con un Fellow en cirugía estética en el Hospital Ángeles del Pedregal.
               </li>
             </ul>
           </div>
         </div>
-        <div class="about-team-content">
-          <div>
+       <div class="about-team-content">
+          <div class="about-team-content-background"></div>
+          <div class="about-team-img-marcos">
             <img class="about-team-img" src="img/about/img-dr-marcos.jpg">
           </div>
           <div class="about-team-list-container">
@@ -229,6 +233,11 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="text-decorator-container about-button-mobile">
+      <a href="tratamientos.html">
+        <button class="special-button font-h5 ff-bold">Tratamientos</button>
+      </a>
     </div>
   </div>
 </div>
@@ -303,7 +312,7 @@
           <div class="footer-separator separator-follow"></div>
           <div class="footer-social-icons">
             <div>
-              <a href="">
+              <a href="https://www.facebook.com/Neulift/" target="_blank">
                 <img class="footer-icon-fb" src="img/icons/icon-fb.png" alt="facebook icon">
               </a>
             </div>
