@@ -112,20 +112,20 @@
     justify-content center
     
   .line-hamburguer-base
-    height 1px
+    height 2px
     background-color #fff
 
   .line-hamburguer-lg
-    width: 15px
+    width 28px
     
   .line-hamburguer-md
-    width 7.5px
+    width 20px
     
   .margin-vertical-4px
-    margin 4px 0px
+    margin 6px 0px
 
   .hamburger-menu-container
-    background-color gray
+    background-color $cBlueGray
     display inline
     left 0
     padding-bottom 50px
@@ -162,7 +162,7 @@
   .hamburger-option-link
     color #fff
     cursor pointer
-    font-size remify(12)
+    font-size remify(15px)
     letter-spacing 1.4px
     text-transform uppercase
     transition all 0.2s
@@ -181,6 +181,10 @@
       .hamburger-stroke
         width 100%
         background-color #fff
+
+  .hamburger-active
+    font-weight bold
+    text-decoration underline
 
   .hamburger-text-container
     margin 35px 0
