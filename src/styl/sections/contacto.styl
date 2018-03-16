@@ -1,9 +1,15 @@
 .contact
   background-image url("../img/backgrounds/background-contact.png")
-  background-position left -190px
+  background-position left 0
   background-repeat no-repeat
   background-size 330px
-  margin-top 160px
+  padding-top 238px
+
+  &-title
+    font-size remify(36px)
+
+    &-container
+      margin-top -10px
 
   &-form
     &-section
@@ -20,13 +26,20 @@
       flex-direction column
 
     &-input
-      border-bottom solid 1px $cBlueGray
+      border-bottom solid 1px $cLightBlack
       border-left none
       border-right none
       border-top none
+      color #6c6c6c
+      letter-spacing 0.3px
       line-height 18px
       margin-bottom 40px
       padding 0 10px 2px 10px
+      transition 0.3s
+
+      &:focus
+        border-bottom solid 1px $cBlueGray
+        transition 0.3s
 
     &-submit
       background-color $cBlueGray
@@ -98,7 +111,8 @@
 
 @media screen and (max-width 768px)
   .contact
-    margin-top 120px
+    background-image initial
+    padding-top 120px
 
     &-form
       &-section
