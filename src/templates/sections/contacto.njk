@@ -7,26 +7,26 @@
 {% block content %}
 <div class="contact">
   <div class="contact-form-section">
-    <div>
-      <h1 class="font-mega ff-bold">Contacto</h1>
+    <div class="contact-title-container">
+      <h1 class="contact-title font-mega ff-bold">Contacto</h1>
     </div>
     <div class="contact-form-container">
       <form name="neulift-contact" method="post" action="http://integrations.blick.mx/neulift/contact/">
         <div class="contact-form-content">
-          <label class="font-h5 ff-bold">Nombre completo</label>
-          <input class="contact-form-input font-h5 ff-medium" type="text" name="name" required>
+          <label class="font-h5 ff-bold" for="full-name">Nombre completo</label>
+          <input class="contact-form-input font-h6 ff-medium" type="text" name="name" id="full-name" required>
         </div>
         <div class="contact-form-content">
-          <label class="font-h5 ff-bold">Teléfono</label>
-          <input class="contact-form-input font-h5 ff-medium"  type="tel" name="phone">
+          <label class="font-h5 ff-bold" for="telephone">Teléfono</label>
+          <input class="contact-form-input font-h6 ff-medium"  type="tel" name="phone" id="telephone">
         </div>
         <div class="contact-form-content">
-          <label class="font-h5 ff-bold">Correo electrónico</label>
-          <input class="contact-form-input font-h5 ff-medium"  type="email" name="email" required>
+          <label class="font-h5 ff-bold" for="e-mail">Correo electrónico</label>
+          <input class="contact-form-input font-h6 ff-medium"  type="email" name="email" id="e-mail" required>
         </div>
         <div class="contact-form-content">
-          <label class="font-h5 ff-bold">Mensaje</label>
-          <textarea class="contact-form-input font-h5 ff-medium" type="text"  name="message"></textarea>
+          <label class="font-h5 ff-bold" for="message">Mensaje</label>
+          <textarea class="contact-form-input font-h6 ff-medium" type="text"  name="message" id="message"></textarea>
         </div>
         <div>
           <button class="contact-form-submit font-h5 ff-bold" type="submit">Enviar</button>
