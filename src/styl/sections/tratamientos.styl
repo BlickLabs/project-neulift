@@ -93,6 +93,37 @@
     height 302px
     width 236px !important
 
+    &-container
+      position relative
+
+    &-content
+      background-color $cBlueGray
+      bottom 0
+      cursor pointer
+      left 0
+      opacity 0
+      overflow auto
+      padding 30px
+      position absolute
+      right 0
+      top 0
+      transition 0.3s
+
+      &-title
+        margin-bottom 15px
+
+      &-description
+        padding-bottom 30px
+
+    &-container:hover
+      .treatments-cards-content
+        opacity 0.9
+        transition 0.3s
+
+  &-last-btn
+    margin 0 auto 158px auto
+    width 114px
+
 .injectables,
 .aparatology,
 .others
@@ -234,11 +265,11 @@
       left -18px
       position absolute
 
-.counter-treatments-container
-  margin 0 auto
-  right 0
-  top -30px
-  width 55px
+  .counter-treatments-container
+    margin 0 auto
+    right 0
+    top -30px
+    width 55px
 
 @media screen and (min-width 769px) and (max-width 860px)
   .treatments
