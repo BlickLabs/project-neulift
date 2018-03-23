@@ -10,6 +10,10 @@
     justify-content flex-end
     padding 0 0 50px 150px
 
+    &-title
+      &-container
+        max-width 400px
+
     &-subtitle
       margin 25px 0 60px 0
       max-width 305px
@@ -123,12 +127,13 @@
 @media screen and (max-width 768px)
   .home
     &-cover
-      background-position right
-      height 430px
-      padding 0 30px 50px 30px
+      background-position -660px 0 //right
+      height 546px //430px
+      padding 0 30px 18px 30px
 
       &-subtitle
-        margin-bottom 30px
+        margin-bottom 10px
+        margin-top 5px
 
     &-treatments
       margin-bottom 40px

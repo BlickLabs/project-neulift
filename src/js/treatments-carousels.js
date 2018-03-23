@@ -46,7 +46,7 @@ aparatologyCarousel.owlCarousel ({
   margin: 20,
   center: false,
   items: 2,
-  startPosition: 5,
+  startPosition: 7,
   onInitialized: counterAparatology,
   onTranslated: counterAparatology,
   responsive:{
