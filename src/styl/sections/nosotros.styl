@@ -17,7 +17,7 @@
 
     &-img
       height 480px
-      width 736px
+      width 374px
 
     &-paragraph
       margin 20px 0 50px 0
@@ -35,7 +35,7 @@
     &-content
       display flex
       flex-direction row
-      padding-bottom 30px
+      padding 0 0 30px 270px
       position relative
       width 780px
 
@@ -143,6 +143,7 @@
 
         &-background
           left 0
+          top 60px
 
       &-img
         height 298px
@@ -158,6 +159,7 @@
 
         &-container
           margin-left 0
+          margin-top 0
           max-width 250px
 
         li
@@ -169,7 +171,7 @@
 
     &-controls
       left -20px
-      top 190px
+      top 103px
 
     &-button-desktop
       display none
@@ -204,3 +206,8 @@
 
       &-our
         margin-bottom 80px
+
+@media screen and (max-width 480px)
+  .about
+    &-carousel
+      width 100%
